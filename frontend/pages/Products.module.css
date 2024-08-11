@@ -1,0 +1,126 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4,500px);
+  gap: 100px 20px;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.popupForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 4px 8px rgb(90, 87, 86);
+  padding: 25px;
+}
+
+.cancelBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.input {
+  padding: 10px 20px;
+  border: 0.5px solid rgb(208, 212, 228);
+  border-radius: 5px;
+  width: 20em;
+}
+
+.categories {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.root {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.btn, .cancelBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover, .cancelBtn:hover {
+  cursor: pointer;
+  background-color: orangered;
+}
+
+.product {
+  height: 280px;
+  width: 200px;
+  background-color: rgb(204, 204, 204);
+  box-shadow: 0px 4px 8px rgb(90, 87, 86);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.priceContainer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  position: absolute;
+  left: 5px;
+  bottom: -10px;
+}
+
+.product p {
+  font-size: 10px;
+}
+
+.cart {
+  position: absolute;
+  font-size: 30px;
+  border: 1px solid black;
+  bottom: 100px;
+  right: 100px;
+  padding: 20px;
+  background-color: orangered;
+  box-shadow: 0px 4px 8px rgb(90, 87, 86);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* #desc {
+  position: absolute;
+  right: 5px;
+  top: 100px;
+} */
+
+/* ------------------------------------ */
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    gap: 100px 20px;
+    padding: 20px;
+  }
+}
